@@ -22,10 +22,7 @@ namespace RockPaperScissorsGame
             string scissors = "";
             string paper = "";
             Console.WriteLine("");
-            while (health >= 0 )
-            {
-
-
+            
                 if (answer == "yes")
                 {
                     Console.WriteLine("The game begins,but before that,the rules:");
@@ -1623,7 +1620,7 @@ namespace RockPaperScissorsGame
 
                                 health = health + 20;
                                 Console.WriteLine("");
-                                Console.WriteLine("Elon Musk chose:scissors!You win the game tickets to all the matches of the 2026 FIFA World Cup in America!");
+                                Console.WriteLine("Elon Musk chose:scissors!You win the game and tickets to all the matches of the 2026 FIFA World Cup in America!");
                                 Console.WriteLine("");
                                 Console.WriteLine($"Your health is {health}!");
                                 break;
@@ -1631,7 +1628,7 @@ namespace RockPaperScissorsGame
 
                                 health = health - 20;
                                 Console.WriteLine("");
-                                Console.WriteLine("Elon Musk chose:paper!You lose,but you win win tickets to all the matches of the 2026 FIFA World Cup in America!");
+                                Console.WriteLine("Elon Musk chose:paper!You lose,but you win tickets to all the matches of the 2026 FIFA World Cup in America!");
                                 Console.WriteLine("");
                                 Console.WriteLine($"Your health is {health}!");
                                 break;
@@ -1655,7 +1652,7 @@ namespace RockPaperScissorsGame
                             case 2:
                                 health = health - 20;
                                 Console.WriteLine("");
-                                Console.WriteLine("Elon Musk chose:rock!You lose,but you win win tickets to all the matches of the 2026 FIFA World Cup in America!");
+                                Console.WriteLine("Elon Musk chose:rock!You lose,but you win tickets to all the matches of the 2026 FIFA World Cup in America!");
                                 Console.WriteLine("");
                                 Console.WriteLine($"Your health is {health}!");
                                 break;
@@ -1697,12 +1694,18 @@ namespace RockPaperScissorsGame
                     Console.WriteLine("You are a coward :D!Boo Boo Boo!!!");
 
                 }
-                
 
-            }
-            Console.WriteLine("Game Over!");
+
+            
         }
     }
 }
+
+
+
+
+
+
+
 
 
