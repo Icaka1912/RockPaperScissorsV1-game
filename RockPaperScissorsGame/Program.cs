@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Channels;
 namespace RockPaperScissorsGame
 {
@@ -15,7 +16,7 @@ namespace RockPaperScissorsGame
             Console.WriteLine("Are you ready to engage in a tough battle with other rock,scissors,paper opponents to win tickets to all the matches of the 2026 FIFA World Cup in America?");
             Console.WriteLine("");
             Console.WriteLine("Write yes or no!");
-            int health = 100;
+            int health = -60;
             string answer = Console.ReadLine();
             string rock = "";
             string scissors = "";
@@ -411,12 +412,13 @@ namespace RockPaperScissorsGame
                             health = health - 20;
                             Console.WriteLine($"Your health is {health}!");
                             break;
+
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+                }
+                if (health < 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -494,11 +496,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -577,11 +580,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -659,11 +663,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -741,11 +746,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -823,11 +829,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -905,11 +912,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -987,11 +995,12 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1069,13 +1078,14 @@ namespace RockPaperScissorsGame
                             Console.WriteLine($"Your health is {health}!");
                             break;
                     }
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
 
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1154,12 +1164,13 @@ namespace RockPaperScissorsGame
                             break;
                     }
 
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1238,12 +1249,13 @@ namespace RockPaperScissorsGame
                             break;
                     }
 
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1323,12 +1335,13 @@ namespace RockPaperScissorsGame
                             break;
                     }
 
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1408,12 +1421,13 @@ namespace RockPaperScissorsGame
                     }
 
 
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1492,12 +1506,13 @@ namespace RockPaperScissorsGame
                             break;
                     }
 
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
+
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1576,12 +1591,12 @@ namespace RockPaperScissorsGame
                             break;
                     }
 
-                    if (health <= 0)
-                    {
-                        Console.WriteLine("Game Over!");
-                        Console.WriteLine("You loose!");
-                    }
 
+                }
+                if (health <= 0)
+                {
+                    Console.WriteLine("Game Over!");
+                    Console.WriteLine("You loose!");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("=========");
@@ -1602,15 +1617,15 @@ namespace RockPaperScissorsGame
                     switch (type)
                     {
                         case 1:
-                            
+
                             health = health + 20;
                             Console.WriteLine("");
-                            Console.WriteLine("Elon Musk chose:scissors!You win tickets to all the matches of the 2026 FIFA World Cup in America!");
+                            Console.WriteLine("Elon Musk chose:scissors!You win the game tickets to all the matches of the 2026 FIFA World Cup in America!");
                             Console.WriteLine("");
                             Console.WriteLine($"Your health is {health}!");
                             break;
                         case 2:
-                           
+
                             health = health - 20;
                             Console.WriteLine("");
                             Console.WriteLine("Elon Musk chose:paper!You lose,but you win win tickets to all the matches of the 2026 FIFA World Cup in America!");
@@ -1629,7 +1644,7 @@ namespace RockPaperScissorsGame
                         case 1:
                             health = health + 20;
                             Console.WriteLine("");
-                            Console.WriteLine("Elon Musk chose:paper!You win tickets to all the matches of the 2026 FIFA World Cup in America!");
+                            Console.WriteLine("Elon Musk chose:paper!You win the game and tickets to all the matches of the 2026 FIFA World Cup in America!");
                             Console.WriteLine("");
                             Console.WriteLine($"Your health is {health}!");
 
@@ -1653,7 +1668,7 @@ namespace RockPaperScissorsGame
 
                             health = health + 20;
                             Console.WriteLine("");
-                            Console.WriteLine("Elon Musk chose:rock!You win tickets to all the matches of the 2026 FIFA World Cup in America!");
+                            Console.WriteLine("Elon Musk chose:rock!You win the game and tickets to all the matches of the 2026 FIFA World Cup in America!");
                             Console.WriteLine("");
                             Console.WriteLine($"Your health is {health}!");
                             break;
